@@ -2,8 +2,6 @@
 
 Platform galeri karya dan portofolio digital. Kreator mengunggah karya (gambar/video), admin memoderasi sebelum tayang, pengunjung menjelajah, menyukai, berkomentar, dan melaporkan.
 
-**Stack:** Laravel 12 (PHP 8.2+), Blade, Eloquent, MySQL, Tailwind CSS (CDN), Lucide, SweetAlert2, Chart.js, font Plus Jakarta Sans.
-
 ## Peran
 
 | Peran | Kemampuan |
