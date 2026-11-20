@@ -192,4 +192,3 @@ KreatifGallery dikembangkan untuk menyediakan wadah digital yang memudahkan krea
 ---
 
 **KreatifGallery – Showcase Your Creativity, Inspire the World.**
->>>>>>> a6a9be039ff5d4f1f4bf73b01cb6a838e72877ab
