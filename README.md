@@ -64,7 +64,6 @@ Buka `http://127.0.0.1:8000`. URL media memakai jalur relatif `/storage/...`, se
 
 | Peran | Email | Kata sandi bawaan |
 |---|---|---|
-| Admin | `admin@kreatifgallery.test` | `admin12345` |
 | Kreator | `kreator@kreatifgallery.test` | `password123` |
 | Pengunjung | `pengunjung@kreatifgallery.test` | `password123` |
 
