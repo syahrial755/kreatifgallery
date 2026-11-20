@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /vendor
 /node_modules
 /public/storage
@@ -6,3 +7,36 @@
 .env.backup
 .phpunit.result.cache
 database/database.sqlite
+=======
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+/.phpunit.cache
+
+/public/build
+/storage/pail
+.env.backup
+.env.production
+.phpactor.json
+auth.json
+>>>>>>> a6a9be039ff5d4f1f4bf73b01cb6a838e72877ab
