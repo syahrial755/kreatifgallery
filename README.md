@@ -30,45 +30,6 @@ mysql -u root -e "CREATE DATABASE kreatifgallery CHARACTER SET utf8mb4 COLLATE u
 php artisan migrate --seed
 php artisan storage:link
 ```
-
-### Batas upload PHP (penting)
-
-Default PHP (`upload_max_filesize=2M`, `post_max_size=8M`) lebih kecil dari aturan aplikasi (20 MB per file, 10 file). Naikkan di `php.ini` (atau pool PHP-FPM):
-
-```ini
-upload_max_filesize = 20M
-post_max_size = 210M
-max_file_uploads = 20
-```
-
-Untuk server pengembangan bawaan PHP:
-
-```bash
-php -d upload_max_filesize=25M -d post_max_size=210M -S 127.0.0.1:8000 -t public
-```
-
-`php artisan serve` tidak meneruskan opsi `-d`, jadi atur lewat `php.ini` bila memakainya. Jika batas terlalu kecil, unggahan ditolak PHP sebelum sampai ke aplikasi. Pada server produksi, sesuaikan juga `client_max_body_size` (Nginx).
-
-### Menjalankan
-
-```bash
-php -d upload_max_filesize=25M -d post_max_size=210M -S 127.0.0.1:8000 -t public
-```
-
-Buka `http://127.0.0.1:8000`. URL media memakai jalur relatif `/storage/...`, sehingga tidak bergantung pada `APP_URL`.
-
-## Akun pengembangan (seeder)
-
-> **PERINGATAN: akun dan kata sandi di bawah hanya untuk pengembangan lokal. Jangan dipakai di produksi.**
-> Ganti lewat `SEED_ADMIN_PASSWORD` / `SEED_USER_PASSWORD` di `.env` sebelum menjalankan seeder, atau ubah kata sandi lewat aplikasi (Settings) segera setelah instalasi.
-
-| Peran | Email | Kata sandi bawaan |
-|---|---|---|
-| Kreator | `kreator@kreatifgallery.test` | `password123` |
-| Pengunjung | `pengunjung@kreatifgallery.test` | `password123` |
-
-Saat `APP_ENV=production`, seeder hanya membuat akun dan kategori dasar; data demo (karya, suka, komentar) tidak dibuat. Seeder bersifat idempoten.
-
 ## Pengujian
 
 ```bash
