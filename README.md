@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # KreatifGallery
 
 Platform galeri karya dan portofolio digital. Kreator mengunggah karya (gambar/video), admin memoderasi sebelum tayang, pengunjung menjelajah, menyukai, berkomentar, dan melaporkan.
